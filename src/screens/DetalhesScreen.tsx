@@ -1,12 +1,18 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import LayoutWithNav from '../components/LayoutWithNav';
+import * as Animatable from 'react-native-animatable';
 
 export default function DetalhesScreen() {
   return (
     <LayoutWithNav>
       <View style={styles.container}>
-        <Text style={styles.text}>Esta é a tela de detalhes.</Text>
+        <Animatable.Text
+                  animation="fadeInUp"
+                  style={styles.text}
+                >
+                  Bem-vindo ao seu perfil!
+                </Animatable.Text>
       </View>
     </LayoutWithNav>
   );
@@ -18,5 +24,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 20,
+    fontWeight: 'bold',
+    color: '#333' ,
   },
 });
