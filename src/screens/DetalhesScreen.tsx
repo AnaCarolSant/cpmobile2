@@ -11,7 +11,7 @@ export default function DetalhesScreen() {
                   animation="fadeInUp"
                   style={styles.text}
                 >
-                  Bem-vindo ao seu perfil!
+                  Esta é a tela de detalhes.
                 </Animatable.Text>
       </View>
     </LayoutWithNav>
